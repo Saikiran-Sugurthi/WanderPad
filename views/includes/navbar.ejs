@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-md bg-white border-bottom sticky-top custom-navbar">
+  <div class="container-fluid px-4">
+
+    <!-- Brand -->
+    <a class="navbar-brand d-flex align-items-center gap-2" href="/listings">
+      <i class="fa-regular fa-compass brand-icon"></i>
+      <span class="brand-text">WanderPad</span>
+    </a>
+
+    <button class="navbar-toggler" type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+      <!-- Left -->
+      <div class="navbar-nav">
+        <a class="nav-link active" href="/listings">Explore</a>
+      </div>
+
+      <!-- Right -->
+      <div class="navbar-nav ms-auto align-items-center gap-2">
+        <a class="nav-link host-link" href="/listings/new">Airbnb your home</a>
+
+        <% if(!currUser){ %>
+          <a class="btn btn-outline-dark btn-sm" href="/login">Login</a>
+          <a class="btn btn-dark btn-sm" href="/signup">Signup</a>
+        <% } %>
+
+        <% if(currUser){ %>
+          <a class="btn btn-outline-dark btn-sm" href="/logout">Logout</a>
+        <% } %>
+
+      </div>
+    </div>
+  </div>
+</nav>
