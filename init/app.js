@@ -1,9 +1,12 @@
+const path = require("path");
+require("dotenv").config({
+  path: path.resolve(__dirname, "../.env"),
+});
 const mongoose = require("mongoose");
 const Listing = require("../models/listingSchema.js");
 const insertData = require("../init/data");
 
-const MONGO_URL =
-  "mongodb+srv://saikiransugurthi1:143Saikiran@zerodhaclonecluster.irfiip8.mongodb.net/WanderPad?retryWrites=true&w=majority&appName=ZerodhaCloneCluster";
+const MONGO_URL = process.env.MONGO_URL;
 
 main()
   .then(() => {
