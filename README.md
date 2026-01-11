@@ -1,8 +1,4 @@
-Got it 👍
-Here is a **short, clean, professional README** written in **plain text**, so it looks good when printed or copied anywhere.
-No markdown blocks, no clutter.
 
----
 
 WanderPad
 
